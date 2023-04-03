@@ -11,7 +11,7 @@ const PaymentSection = () => {
                 <div className='invisible md:visible'>
                     <Navbar />
                 </div>
-                <div style={{width:'50%'}} className='w-[10p]'>
+                <div style={{ width: '50%' }} className='w-[10p]'>
                     <Modal width={70} height={10} className="" styles={{ width: '10%' }}
                         onClose={() => setShowModal(false)}
                         show={showModal}
@@ -25,6 +25,7 @@ const PaymentSection = () => {
                             className="flex gap-6 text-[#0A0A0A]">
                             <Image
                                 src='icons/arrowicon.svg'
+                                alt=''
                                 width={12}
                                 height={12}
                             />
@@ -46,6 +47,7 @@ const PaymentSection = () => {
                         <div>
                             <Image
                                 src='icons/Arrow 1.svg'
+                                alt=''
                                 width={25}
                                 height={17}
                                 className='cursor-pointer'
@@ -68,10 +70,10 @@ const PaymentSection = () => {
                           /> */}
 
                             <div className='md:pt-10 pt-5'>
-                            <Image className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] rounded-full  shadow-lg mx-auto" src="/images/dumy.jpg" alt="Avatar of Jonathan Reinink"
-                                            width={50}
-                                            height={50}
-                                        />
+                                <Image className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] rounded-full  shadow-lg mx-auto" src="/images/dumy.jpg" alt="Avatar of Jonathan Reinink"
+                                    width={50}
+                                    height={50}
+                                />
                                 <div className="flex justify-center  gap-3">
                                     <p className='text-white text-[24px] font-normal  font-serif ml-6'>Business Name</p>
 

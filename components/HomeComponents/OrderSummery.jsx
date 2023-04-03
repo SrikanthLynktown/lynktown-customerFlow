@@ -17,6 +17,7 @@ const OrderSummery = () => {
                             className="flex gap-6 text-[#0A0A0A]">
                             <Image
                                 src='icons/arrowicon.svg'
+                                alt=''
                                 width={12}
                                 height={12}
                             />
@@ -38,6 +39,7 @@ const OrderSummery = () => {
                         <div>
                             <Image
                                 src='icons/Arrow 1.svg'
+                                alt=''
                                 width={25}
                                 height={17}
                                 className='cursor-pointer'

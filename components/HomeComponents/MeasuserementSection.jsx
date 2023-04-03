@@ -18,6 +18,7 @@ const MeasurementSection = () => {
                                 className="flex gap-6 text-[#0A0A0A]">
                                 <Image
                                     src='icons/arrowicon.svg'
+                                    alt='arrowicon'
                                     width={12}
                                     height={12}
                                 />
@@ -38,6 +39,7 @@ const MeasurementSection = () => {
                             <div>
                                 <Image
                                     src='icons/Arrow 1.svg'
+                                    alt='Arrow'
                                     width={25}
                                     height={17}
                                     className='cursor-pointer'

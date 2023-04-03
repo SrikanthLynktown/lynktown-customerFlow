@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 const ProfileModal = () => {
+    const router = useRouter()
     return (
         <>
             <div
@@ -28,7 +30,7 @@ const ProfileModal = () => {
                         <p>Notifications</p>
                     </div>
 
-                    {/* <div className="flex border-b-2 mt-3 pb-3 px-4 gap-4">
+                    <div className="flex border-b-2 mt-3 pb-3 px-4 gap-4">
                         <Image
                             src="icons/wishlist.svg" alt=""
                             width={20}
@@ -36,9 +38,9 @@ const ProfileModal = () => {
                             className=''
                         />
                         <p>Wishlist</p>
-                    </div> */}
+                    </div>
 
-                    {/* <div className="flex border-b-2 mt-3 pb-3 px-4 gap-4">
+                    <div className="flex border-b-2 mt-3 pb-3 px-4 gap-4">
                         <Image
                             src="icons/location.svg" alt=""
                             width={20}
@@ -46,8 +48,8 @@ const ProfileModal = () => {
                             className=''
                         />
                         <p>My Address</p>
-                    </div> */}
-                    {/* <div className="flex border-b-2 mt-3 pb-3 px-4 gap-4">
+                    </div>
+                    <div className="flex border-b-2 mt-3 pb-3 px-4 gap-4">
                         <Image
                             src="icons/location.svg" alt=""
                             width={20}
@@ -55,8 +57,8 @@ const ProfileModal = () => {
                             className=''
 
                         />
-                        <p>Measurments</p>
-                    </div> */}
+                        <p onClick={() => router.push('/measurement')}>Measurments</p>
+                    </div>
                 </div>
 
                 {/* <div

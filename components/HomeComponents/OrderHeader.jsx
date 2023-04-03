@@ -13,10 +13,10 @@ const OrderHeader = () => {
                     /> */}
 
                     <div className='md:pt-10 pt-5'>
-                        <img
-                            src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp"
-                            className="w-10 md:w-20 rounded-full shadow-lg mx-auto"
-                            alt="Avatar" />
+                        <Image className="mx-auto w-[50px] h-[50px] md:w-[60px] md:h-[60px] rounded-full" src="/images/dumy.jpg" alt="Avatar of Jonathan Reinink"
+                            width={50}
+                            height={50}
+                        />
                         <div className="flex justify-center  gap-3">
                             <p className='text-white text-[24px] font-normal  font-serif ml-6'>Business Name</p>
 
@@ -109,7 +109,7 @@ const OrderHeader = () => {
                             <p className='py-4 text-[#3B3B3B] text-[12px] font-medium font-sans leading-[18px] ' >Select your prefered size</p>
 
                             <label className="relative inline-flex items-center cursor-pointer">
-                               
+
                                 <input type="checkbox" value="1" className="sr-only peer" placeholder='saeeef' />
                                 <div className="px-2 flex gap-2 w-11 h-6 bg-gray-200 text-white rounded-full peer peer-focus:ring-4 peer-focus:ring-[#6A5B40] dark:peer-focus:ring-bl dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#6A5B40]">
                                     <span className='text-white'>L</span>

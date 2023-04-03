@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 const UserDetails = () => {
     const router = useRouter()
     return (
@@ -24,6 +25,7 @@ const UserDetails = () => {
                             <span className='pt-[4px] text-[#FFFFFF] bg-red-30'>
                                 <Image
                                     src='icons/location.svg'
+                                    alt=''
                                     width={16}
                                     height={16}
                                     className='text-[#FFFFFF] '
@@ -71,11 +73,16 @@ const UserDetails = () => {
                         </div>
                         <div>
                             <button className="flex gap-4  justify-center mx-auto bg-[#6A5B40]  text-white font-bold py-2 px-4 rounded-full w-[344px] invisible md:visible" onClick={() => router.push('/payment')}>
-                                <span className='text-[ #FFFFFF] text-[16px] leading-[24px] font-bold'>Next</span>
+                                <Link href="/payment">
+                                    <span className='text-[ #FFFFFF] text-[16px] leading-[24px] font-bold' onClick={() => router.push('/payment')}>Next</span>
+                                </Link>
                             </button>
 
                             <button className="md:invisible visible bg-[#6A5B40]  text-white font-bold py-2 px-4 rounded w-full">
-                                <span className='text-[ #FFFFFF] text-[16px] leading-[24px] font-bold  '>Save</span>
+                                <Link href="/payment">
+                                    <span className='text-[ #FFFFFF] text-[16px] leading-[24px] font-bold' onClick={() => router.push('/payment')}>Next</span>
+                                </Link>
+                                {/* <span className='text-[ #FFFFFF] text-[16px] leading-[24px] font-bold  ' onClick={() => router.push('/payment')}>Save</span> */}
                             </button>
                         </div>
                     </form>

@@ -1,7 +1,9 @@
 import React from 'react';
 import Navbar from '../Header/Navbar';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 const UserCard = () => {
+    const router=useRouter()
     return (
         <>
 
@@ -19,6 +21,7 @@ const UserCard = () => {
                             className="flex gap-6 text-[#0A0A0A]">
                             <Image
                                 src='icons/arrowicon.svg'
+                                alt=''
                                 width={12}
                                 height={12}
                             />
@@ -55,6 +58,7 @@ const UserCard = () => {
                     <div className='px-10 py- md:py-10 flex gap-6 '>
                         <Image
                             src='icons/Arrow 1.svg'
+                            alt=''
                             width={25}
                             height={17}
                             className='cursor-pointer'
@@ -75,10 +79,81 @@ const UserCard = () => {
                                 <div
                                     class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
                                     <a href="#!" data-te-ripple-init data-te-ripple-color="light">
-                                        <img
+                                        <Image
                                             class="rounded-lg w-full"
                                             src="images/Rectangle 4530.svg"
-                                            alt="" />
+                                            alt=""
+                                            width={10}
+                                            height={10}
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="py-4" onClick={()=>router.push('/order-summery')}>
+                                <button class="bg-[#3AC267]  text-white text-[10px] md:text-[12px] leading-[13px] md:leading-[16px] font-sans font-medium py-1 px-4 rounded-full">
+                                    New
+                                </button>
+
+                                <div className='flex text-[#FFFFFF] justify-between pt-2'>
+                                    <a href="" className='underline text-[14px] leading-[18px] font-normal font-sans '>u2lynk.com/id=5234</a>
+                                    <p className='text-[18px] leading-[28px] font-bold font-sans'>$8000</p>
+                                </div>
+                                <h6 className='text-white text-[22px] md:text-[20px] leading-[21px] font-normal font-serif '>By Designer name</h6>
+                                <p className='text-white text-[12px] leading-[16px] font-medium font-sans pt-2'>Total no of products (1)</p>
+
+                                <div className='flex text-[#FFFFFF] justify-between mt-2'>
+                                    <p className='text-[12px] leading-[16px] font-medium font-sans pt-1'>Date : 02 / 12 / 2022 </p>
+                                    <a href="" className='underline text-[12px] md:text-[14px] leading-[28px] font-bold font-sans '>View details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:w-[289px] md:w-1/2  w-full p-4 bg-[#6A5B40] rounded-lg gap-4">
+                            <div class="fle justify-cente">
+                                <div
+                                    class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+                                    <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+                                        <Image
+                                            class="rounded-lg w-full"
+                                            src="images/Rectangle 4530.svg"
+                                            alt=""
+                                            width={10}
+                                            height={10}
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="py-4">
+                                <button class="bg-[#3AC267]  text-white text-[10px] md:text-[12px] leading-[13px] md:leading-[16px] font-sans font-medium py-1 px-4 rounded-full">
+                                    New
+                                </button>
+
+                                <div className='flex text-[#FFFFFF] justify-between pt-2'>
+                                    <a href="" className='underline text-[14px] leading-[18px] font-normal font-sans '>u2lynk.com/id=5234</a>
+                                    <p className='text-[18px] leading-[28px] font-bold font-sans'>$8000</p>
+                                </div>
+                                <h6 className='text-white text-[22px] md:text-[20px] leading-[21px] font-normal font-serif '>By Designer name</h6>
+                                <p className='text-white text-[12px] leading-[16px] font-medium font-sans pt-2'>Total no of products (1)</p>
+
+                                <div className='flex text-[#FFFFFF] justify-between mt-2'>
+                                    <p className='text-[12px] leading-[16px] font-medium font-sans pt-1'>Date : 02 / 12 / 2022 </p>
+                                    <a href="" className='underline text-[12px] md:text-[14px] leading-[28px] font-bold font-sans '>View details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-[289px] md:w-1/2  w-full p-4 bg-[#6A5B40] rounded-lg gap-4">
+                            <div class="fle justify-cente">
+                                <div
+                                    class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+                                    <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+                                        <Image
+                                            class="rounded-lg w-full"
+                                            src="images/Rectangle 4530.svg"
+                                            alt=""
+                                            width={10}
+                                            height={10}
+
+                                        />
                                     </a>
                                 </div>
                             </div>
@@ -106,71 +181,13 @@ const UserCard = () => {
                                 <div
                                     class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
                                     <a href="#!" data-te-ripple-init data-te-ripple-color="light">
-                                        <img
+                                        <Image
                                             class="rounded-lg w-full"
                                             src="images/Rectangle 4530.svg"
-                                            alt="" />
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="py-4">
-                                <button class="bg-[#3AC267]  text-white text-[10px] md:text-[12px] leading-[13px] md:leading-[16px] font-sans font-medium py-1 px-4 rounded-full">
-                                    New
-                                </button>
-
-                                <div className='flex text-[#FFFFFF] justify-between pt-2'>
-                                    <a href="" className='underline text-[14px] leading-[18px] font-normal font-sans '>u2lynk.com/id=5234</a>
-                                    <p className='text-[18px] leading-[28px] font-bold font-sans'>$8000</p>
-                                </div>
-                                <h6 className='text-white text-[22px] md:text-[20px] leading-[21px] font-normal font-serif '>By Designer name</h6>
-                                <p className='text-white text-[12px] leading-[16px] font-medium font-sans pt-2'>Total no of products (1)</p>
-
-                                <div className='flex text-[#FFFFFF] justify-between mt-2'>
-                                    <p className='text-[12px] leading-[16px] font-medium font-sans pt-1'>Date : 02 / 12 / 2022 </p>
-                                    <a href="" className='underline text-[12px] md:text-[14px] leading-[28px] font-bold font-sans '>View details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lg:w-[289px] md:w-1/2  w-full p-4 bg-[#6A5B40] rounded-lg gap-4">
-                            <div class="fle justify-cente">
-                                <div
-                                    class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
-                                    <a href="#!" data-te-ripple-init data-te-ripple-color="light">
-                                        <img
-                                            class="rounded-lg w-full"
-                                            src="images/Rectangle 4530.svg"
-                                            alt="" />
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="py-4">
-                                <button class="bg-[#3AC267]  text-white text-[10px] md:text-[12px] leading-[13px] md:leading-[16px] font-sans font-medium py-1 px-4 rounded-full">
-                                    New
-                                </button>
-
-                                <div className='flex text-[#FFFFFF] justify-between pt-2'>
-                                    <a href="" className='underline text-[14px] leading-[18px] font-normal font-sans '>u2lynk.com/id=5234</a>
-                                    <p className='text-[18px] leading-[28px] font-bold font-sans'>$8000</p>
-                                </div>
-                                <h6 className='text-white text-[22px] md:text-[20px] leading-[21px] font-normal font-serif '>By Designer name</h6>
-                                <p className='text-white text-[12px] leading-[16px] font-medium font-sans pt-2'>Total no of products (1)</p>
-
-                                <div className='flex text-[#FFFFFF] justify-between mt-2'>
-                                    <p className='text-[12px] leading-[16px] font-medium font-sans pt-1'>Date : 02 / 12 / 2022 </p>
-                                    <a href="" className='underline text-[12px] md:text-[14px] leading-[28px] font-bold font-sans '>View details</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="lg:w-[289px] md:w-1/2  w-full p-4 bg-[#6A5B40] rounded-lg gap-4">
-                            <div class="fle justify-cente">
-                                <div
-                                    class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
-                                    <a href="#!" data-te-ripple-init data-te-ripple-color="light">
-                                        <img
-                                            class="rounded-lg w-full"
-                                            src="images/Rectangle 4530.svg"
-                                            alt="" />
+                                            alt=""
+                                            width={10}
+                                            height={10}
+                                        />
                                     </a>
                                 </div>
                             </div>

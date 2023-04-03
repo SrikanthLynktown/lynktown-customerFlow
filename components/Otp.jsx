@@ -32,6 +32,7 @@ const Otp = () => {
             <div className=' visible md:invisible pb-6'>
               <Image
                 src="icons/Arrow 1.svg"
+                alt=''
                 width={28}
                 height={28}
               />
