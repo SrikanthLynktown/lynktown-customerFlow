@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <>
             <nav
-                className="w-full md:w-full lg:w-full  flex-no-wrap relative flex items-center justify-between  md:py-4  dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start "
+                className="w-full md:w-full lg:w-full  flex-no-wrap relative flex items-center justify-between  py-4 md:py-4  dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start "
 
                 data-te-navbar-ref>
                 <div className="border-b-[1px] border-[#000000] border-opacity-20 flex w-full flex-wra items-center justify-between px-6 pb-4">
