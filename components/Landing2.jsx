@@ -40,7 +40,7 @@ const LandingTwo = ({ setLandingPage }) => {
 
                                             </div>
 
-                                            <div className="px-14 md:p-6 -mt-80 md:-mt-0">
+                                            <div className="px-12 md:p-6 -mt-80 md:-mt-0">
                                                 <h4 className="mb-2 text-cente text-[#FFFFFF] md:text-[#000000] text-[19px]  leading-[36px] font-normal font-serif">
                                                     Readymade and Customized
                                                 </h4>

@@ -52,7 +52,7 @@ const LynkPage = () => {
                     <div className='px-10 py- md:py-10 flex gap-6 '>
                         <Image
                             src='icons/Arrow 1.svg'
-                            alt='arrowicon'
+                            alt=''
                             width={25}
                             height={17}
                             className='cursor-pointer'
@@ -117,13 +117,15 @@ const LynkPage = () => {
                     <h6 className='text-center text-[#0A0A0A] text-[20px] md:text-[24px] leading-[28px] font-normal font-serif'>
                         No  Lynks available!
                     </h6>
-                    <p className='text-center text-[#6C6C6C] text-[14px] md:text-[17px] leading-[23px] font-normal font-sans'>
+                    <p className='pt-2 text-center text-[#6C6C6C] text-[14px] md:text-[17px] leading-[23px] font-normal font-sans'>
                         Contact fashion designers to get Lynks.
                     </p>
                 </div>
 
-                <div className='visible md:invisible'>
+                <div className=''>
+                    <p className='text-[#6C6C6C] text-[16px] leading-[18px] font-normal pb-4 text-center underline'>OR</p>
                     <div className='text-[#6A5B40]  flex justify-center'>
+
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-[32px] h-[32px]">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>

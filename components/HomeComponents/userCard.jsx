@@ -3,7 +3,7 @@ import Navbar from '../Header/Navbar';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 const UserCard = () => {
-    const router=useRouter()
+    const router = useRouter()
     return (
         <>
 
@@ -64,23 +64,23 @@ const UserCard = () => {
                             className='cursor-pointer'
                         />
                         <span className='text-[#6A5B40] text-[42px] leading-[22px] font-normal font-serif '>Lynks</span>
-                        <hr class="w-[549px] h-px mt-4 bg-[#9D8E73] border-0 dark:bg-gray-700" />
+                        <hr className="w-[549px] h-px mt-4 bg-[#9D8E73] border-0 dark:bg-gray-700" />
                     </div>
                 </div>
             </div>
 
             {/* lynks Card */}
 
-            <section class="text-gray-600 body-font">
-                <div class="container px-4 py-1 mx-auto">
-                    <div class="flex flex-wrap gap-6 w-full">
-                        <div class="lg:w-[289px] md:w-1/2  w-full p-4 bg-[#6A5B40] rounded-lg gap-4">
-                            <div class="fle justify-cente">
+            <section className="text-gray-600 body-font">
+                <div className="container px-4 py-1 mx-auto">
+                    <div className="flex flex-wrap gap-6 w-full">
+                        <div className="lg:w-[289px] md:w-1/2  w-full p-4 bg-[#F1F1F1] border-[0.5px] border-[#857250] rounded-lg gap-4">
+                            <div className="justify-cente  border-[3px] border-[#A1CACA] rounded-lg">
                                 <div
-                                    class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+                                    className="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
                                     <a href="#!" data-te-ripple-init data-te-ripple-color="light">
                                         <Image
-                                            class="rounded-lg w-full"
+                                            className="rounded-lg w-full"
                                             src="images/Rectangle 4530.svg"
                                             alt=""
                                             width={10}
@@ -89,32 +89,32 @@ const UserCard = () => {
                                     </a>
                                 </div>
                             </div>
-                            <div class="py-4" onClick={()=>router.push('/order-summery')}>
-                                <button class="bg-[#3AC267]  text-white text-[10px] md:text-[12px] leading-[13px] md:leading-[16px] font-sans font-medium py-1 px-4 rounded-full">
+                            <div className="py-4" onClick={() => router.push('/order-summery')}>
+                                <button className="bg-[#3AC267]  text-white text-[10px] md:text-[12px] leading-[13px] md:leading-[16px] font-sans font-medium py-1 px-4 rounded-full">
                                     New
                                 </button>
 
-                                <div className='flex text-[#FFFFFF] justify-between pt-2'>
+                                <div className='flex text-[#000000] justify-between pt-2'>
                                     <a href="" className='underline text-[14px] leading-[18px] font-normal font-sans '>u2lynk.com/id=5234</a>
                                     <p className='text-[18px] leading-[28px] font-bold font-sans'>$8000</p>
                                 </div>
-                                <h6 className='text-white text-[22px] md:text-[20px] leading-[21px] font-normal font-serif '>By Designer name</h6>
-                                <p className='text-white text-[12px] leading-[16px] font-medium font-sans pt-2'>Total no of products (1)</p>
+                                <h6 className='text-[#000000] text-[22px] md:text-[20px] leading-[21px] font-normal font-serif italic'>By Designer name</h6>
+                                <p className='text-[#000000] text-[12px] leading-[16px] font-medium font-sans pt-2'>Total no of products (1)</p>
 
-                                <div className='flex text-[#FFFFFF] justify-between mt-2'>
+                                <div className='flex text-[#000000] justify-between mt-2'>
                                     <p className='text-[12px] leading-[16px] font-medium font-sans pt-1'>Date : 02 / 12 / 2022 </p>
                                     <a href="" className='underline text-[12px] md:text-[14px] leading-[28px] font-bold font-sans '>View details</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="lg:w-[289px] md:w-1/2  w-full p-4 bg-[#6A5B40] rounded-lg gap-4">
-                            <div class="fle justify-cente">
+                        <div className="lg:w-[289px] md:w-1/2  w-full p-4  bg-[#F1F1F1] border-[0.5px] border-[#857250] rounded-lg gap-4">
+                            <div className="justify-cente  border-[3px] border-[#A1CACA] rounded-lg">
                                 <div
-                                    class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+                                    className="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
                                     <a href="#!" data-te-ripple-init data-te-ripple-color="light">
                                         <Image
-                                            class="rounded-lg w-full"
+                                            className="rounded-lg w-full"
                                             src="images/Rectangle 4530.svg"
                                             alt=""
                                             width={10}
@@ -123,31 +123,31 @@ const UserCard = () => {
                                     </a>
                                 </div>
                             </div>
-                            <div class="py-4">
-                                <button class="bg-[#3AC267]  text-white text-[10px] md:text-[12px] leading-[13px] md:leading-[16px] font-sans font-medium py-1 px-4 rounded-full">
-                                    New
+                            <div className="py-4">
+                                <button className="bg-[#3AC267]  text-white text-[10px] md:text-[12px] leading-[13px] md:leading-[16px] font-sans font-medium py-1 px-4 rounded-full">
+                                    Delivered
                                 </button>
 
-                                <div className='flex text-[#FFFFFF] justify-between pt-2'>
+                                <div className='flex text-[#000000] justify-between pt-2'>
                                     <a href="" className='underline text-[14px] leading-[18px] font-normal font-sans '>u2lynk.com/id=5234</a>
                                     <p className='text-[18px] leading-[28px] font-bold font-sans'>$8000</p>
                                 </div>
-                                <h6 className='text-white text-[22px] md:text-[20px] leading-[21px] font-normal font-serif '>By Designer name</h6>
-                                <p className='text-white text-[12px] leading-[16px] font-medium font-sans pt-2'>Total no of products (1)</p>
+                                <h6 className='text-[#000000] text-[22px] md:text-[20px] leading-[21px] font-normal font-serif italic'>By Designer name</h6>
+                                <p className='text-[#000000] text-[12px] leading-[16px] font-medium font-sans pt-2'>Total no of products (1)</p>
 
-                                <div className='flex text-[#FFFFFF] justify-between mt-2'>
+                                <div className='flex text-[#000000] justify-between mt-2'>
                                     <p className='text-[12px] leading-[16px] font-medium font-sans pt-1'>Date : 02 / 12 / 2022 </p>
                                     <a href="" className='underline text-[12px] md:text-[14px] leading-[28px] font-bold font-sans '>View details</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="lg:w-[289px] md:w-1/2  w-full p-4 bg-[#6A5B40] rounded-lg gap-4">
-                            <div class="fle justify-cente">
+                        <div className="lg:w-[289px] md:w-1/2  w-full p-4  bg-[#F1F1F1] border-[0.5px] border-[#857250] rounded-lg gap-4">
+                            <div className="justify-cente  border-[3px] border-[#A1CACA] rounded-lg">
                                 <div
-                                    class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+                                    className="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
                                     <a href="#!" data-te-ripple-init data-te-ripple-color="light">
                                         <Image
-                                            class="rounded-lg w-full"
+                                            className="rounded-lg w-full"
                                             src="images/Rectangle 4530.svg"
                                             alt=""
                                             width={10}
@@ -157,32 +157,32 @@ const UserCard = () => {
                                     </a>
                                 </div>
                             </div>
-                            <div class="py-4">
-                                <button class="bg-[#3AC267]  text-white text-[10px] md:text-[12px] leading-[13px] md:leading-[16px] font-sans font-medium py-1 px-4 rounded-full">
-                                    New
+                            <div className="py-4">
+                                <button className=" text-[#FF6C59] text-[10px] md:text-[12px] leading-[13px] md:leading-[16px] font-sans font-medium py-1">
+                                Measurement pending
                                 </button>
 
-                                <div className='flex text-[#FFFFFF] justify-between pt-2'>
+                                <div className='flex text-[#000000] justify-between pt-2'>
                                     <a href="" className='underline text-[14px] leading-[18px] font-normal font-sans '>u2lynk.com/id=5234</a>
                                     <p className='text-[18px] leading-[28px] font-bold font-sans'>$8000</p>
                                 </div>
-                                <h6 className='text-white text-[22px] md:text-[20px] leading-[21px] font-normal font-serif '>By Designer name</h6>
-                                <p className='text-white text-[12px] leading-[16px] font-medium font-sans pt-2'>Total no of products (1)</p>
+                                <h6 className='text-[#000000] text-[22px] md:text-[20px] leading-[21px] font-normal font-serif italic'>By Designer name</h6>
+                                <p className='text-[#000000] text-[12px] leading-[16px] font-medium font-sans pt-2'>Total no of products (1)</p>
 
-                                <div className='flex text-[#FFFFFF] justify-between mt-2'>
+                                <div className='flex text-[#000000] justify-between mt-2'>
                                     <p className='text-[12px] leading-[16px] font-medium font-sans pt-1'>Date : 02 / 12 / 2022 </p>
                                     <a href="" className='underline text-[12px] md:text-[14px] leading-[28px] font-bold font-sans '>View details</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="lg:w-[289px] md:w-1/2  w-full p-4 bg-[#6A5B40] rounded-lg gap-4">
-                            <div class="fle justify-cente">
+                        <div className="lg:w-[289px] md:w-1/2  w-full p-4  bg-[#F1F1F1] border-[0.5px] border-[#857250] rounded-lg gap-4">
+                            <div className="justify-cente  border-[3px] border-[#A1CACA] rounded-lg">
                                 <div
-                                    class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+                                    className="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
                                     <a href="#!" data-te-ripple-init data-te-ripple-color="light">
                                         <Image
-                                            class="rounded-lg w-full"
+                                            className="rounded-lg w-full"
                                             src="images/Rectangle 4530.svg"
                                             alt=""
                                             width={10}
@@ -191,19 +191,19 @@ const UserCard = () => {
                                     </a>
                                 </div>
                             </div>
-                            <div class="py-4">
-                                <button class="bg-[#3AC267]  text-white text-[10px] md:text-[12px] leading-[13px] md:leading-[16px] font-sans font-medium py-1 px-4 rounded-full">
-                                    New
+                            <div className="py-4">
+                                <button className="bg-[#D9F2E0]  text-[#4C4D4C] text-[10px] md:text-[12px] leading-[13px] md:leading-[16px] font-sans font-medium py- px-2 rounded-full">
+                                Completed
                                 </button>
 
-                                <div className='flex text-[#FFFFFF] justify-between pt-2'>
+                                <div className='flex text-[#000000] justify-between pt-2'>
                                     <a href="" className='underline text-[14px] leading-[18px] font-normal font-sans '>u2lynk.com/id=5234</a>
                                     <p className='text-[18px] leading-[28px] font-bold font-sans'>$8000</p>
                                 </div>
-                                <h6 className='text-white text-[22px] md:text-[20px] leading-[21px] font-normal font-serif '>By Designer name</h6>
-                                <p className='text-white text-[12px] leading-[16px] font-medium font-sans pt-2'>Total no of products (1)</p>
+                                <h6 className='text-[#000000] text-[22px] md:text-[20px] leading-[21px] font-normal font-serif italic'>By Designer name</h6>
+                                <p className='text-[#000000] text-[12px] leading-[16px] font-medium font-sans pt-2'>Total no of products (1)</p>
 
-                                <div className='flex text-[#FFFFFF] justify-between mt-2'>
+                                <div className='flex text-[#000000] justify-between mt-2'>
                                     <p className='text-[12px] leading-[16px] font-medium font-sans pt-1'>Date : 02 / 12 / 2022 </p>
                                     <a href="" className='underline text-[12px] md:text-[14px] leading-[28px] font-bold font-sans '>View details</a>
                                 </div>

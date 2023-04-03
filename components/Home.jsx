@@ -5,7 +5,7 @@ const HomePage = () => {
     const router = useRouter()
     return (
         <>
-            <div className="flex justify-center mb-20">
+            <div className="flex justify-center">
                 <div className='md:w-[630px] rounded-lg   md:shadow-lg md:border md:border-[#6A5B40]'>
                     <div className=" md:bg-[#EEECE7] md:p-10 flex justify-center items-center object-center ">
 
