@@ -3,7 +3,7 @@ import Image from 'next/image';
 const Landing = ({ setLandingPage }) => {
     return (
         <>
-            <div className="flex justify-center md:bg-[#6A5B40] lg:min-h-screen md:py-6">
+            <div className="flex justify-center md:bg-[#6A5B40] lg:min-h-scree md:py-6  ">
                 <div className="">
                     <div className="container h-ful">
                         <div
@@ -12,12 +12,12 @@ const Landing = ({ setLandingPage }) => {
                                 <div
                                     className="block rounded-lg bg-white">
                                     <div className="g-0 md:flex lg:flex-wrap">
-                                        <div className="w-ful md:w-[326px] lg:w-[326px]">
-                                            <div className="p-0 rounded ">
+                                        <div className=" md:w-[326px] lg:w-[326px]">
+                                            <div className="p- rounded">
                                                 <Image src="images/img1.svg" alt=""
-                                                    width={326}
-                                                    height={601}
-                                                    className='w-screen h-[600px] md:h-[601px]'
+                                                    width={40}
+                                                    height={60}
+                                                    className='h-[610px] object-cover w-full  md:h-[601px] '
                                                 />
                                             </div>
                                         </div>

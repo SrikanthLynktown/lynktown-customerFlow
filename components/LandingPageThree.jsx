@@ -22,7 +22,7 @@ const LandingPageThree = ({ setLandingPage }) => {
                                                 <Image src="/images/landingimg3.svg" alt=""
                                                     width={326}
                                                     height={601}
-                                                    className='w-full h-[600px] md:h-[601px]'
+                                                    className='h-[610px] object-cover w-full  md:h-[601px] '
                                                 />
                                             </div>
                                         </div>
