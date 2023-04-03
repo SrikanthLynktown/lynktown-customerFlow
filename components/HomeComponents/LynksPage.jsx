@@ -15,6 +15,7 @@ const LynkPage = () => {
                             className="flex gap-6 text-[#0A0A0A]">
                             <Image
                                 src='icons/arrowicon.svg'
+                                alt='arrowicon'
                                 width={12}
                                 height={12}
                             />
@@ -51,6 +52,7 @@ const LynkPage = () => {
                     <div className='px-10 py- md:py-10 flex gap-6 '>
                         <Image
                             src='icons/Arrow 1.svg'
+                            alt='arrowicon'
                             width={25}
                             height={17}
                             className='cursor-pointer'
