@@ -33,8 +33,8 @@ const Landing = ({ setLandingPage }) => {
 
                                             </div>
 
-                                            <div className="px-14  md:p-4 -mt-80 md:-mt-0">
-                                                <h4 className="mb-2 text-white md:text-[#000000] text-[22px] md:text-[24px] leading-[36px] font-normal font-serif">
+                                            <div className="px-12  md:p-4 -mt-80 md:-mt-0">
+                                                <h4 className="mb-2 text-white md:text-[#000000] text-[20px] md:text-[24px] leading-[36px] font-normal font-serif">
                                                     Buy Products You Love 💕
                                                 </h4>
                                                 <p className="text-[#FFFFFF] md:text-[#000000] opacity-70 text-[16px] font-normal font-sans leading-[22px] ">
