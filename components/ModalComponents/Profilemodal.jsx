@@ -27,7 +27,7 @@ const ProfileModal = () => {
                             height={20}
                             className=''
                         />
-                        <p>Notifications</p>
+                        <p onClick={() => router.push('/notification')}>Notifications</p>
                     </div>
 
                     <div className="flex border-b-2 mt-3 pb-3 px-4 gap-4">
@@ -47,7 +47,7 @@ const ProfileModal = () => {
                             height={20}
                             className=''
                         />
-                        <p>My Address</p>
+                        <p onClick={()=>router.push('/address')} >My Address</p>
                     </div>
                     <div className="flex border-b-2 mt-3 pb-3 px-4 gap-4">
                         <Image

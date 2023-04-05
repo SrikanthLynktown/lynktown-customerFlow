@@ -33,7 +33,7 @@ const OrderHeader = () => {
 
                 {/* steper code */}
 
-                <div className='px-6 pb-6 md:-mt-0 md:pb-0 -mt-28'>
+                {/* <div className='px-6 pb-6 md:-mt-0 md:pb-0 -mt-28'>
                     <ul
                         data-te-stepper-init
                         className="relative m-0 flex list-none justify-betwee mx-auto overflow-hidden md:p-10 w-[319px] md:w-full">
@@ -79,7 +79,81 @@ const OrderHeader = () => {
                             </p>
                         </li>
                     </ul>
-                </div>
+                </div> */}
+
+
+
+                <div className='px-6 pb-6 md:-mt-0 md:pb-0 -mt-28'>
+                            <ul
+                                data-te-stepper-init
+                                className="relative m-0 flex list-none justify-betwee mx-auto overflow-hidden md:p-10 w-[319px] md:w-[600px] lg:w-[814px] md: lg:h-[200px]">
+                                <li
+                                    data-te-stepper-step-ref
+                                    data-te-stepper-step-active
+                                    className="w-[4.5rem] flex-auto">
+                                    <div
+                                        data-te-stepper-head-ref
+                                        className="flex cursor-pointer items-center pl-2 after:h-px after:w-full after:flex-1 after:bg-[#e0e0e0]">
+                                        <span
+                                            data-te-stepper-head-icon-ref
+                                            className="my-2 mr-2 flex h-[1.938rem] w-[1.938rem] items-center justify-center rounded-full bg-[#ebedef] text-sm font-medium text-[#40464f]">
+                                            1
+                                        </span>
+
+                                    </div>
+
+                                    <p
+                                        data-te-stepper-head-text-ref
+                                        className="text-[14px] leading-[22px] text-[#0A0A0A] font-normal font-sans md:-ml-6">
+                                        Order Summery
+                                    </p>
+
+                                </li>
+                                <li data-te-stepper-step-ref className="">
+                                    <div
+                                        data-te-stepper-head-ref
+                                        className="flex cursor-pointer items-center leading-[1.3rem] no-underline before:mr-2 before:h-px before:w-full before:flex-1 before:bg-[#e0e0e0] before:content-[''] after:ml-2 after:h-px after:w-full after:flex-1 after:bg-[#e0e0e0] after:content-['']">
+                                        <span
+                                            data-te-stepper-head-icon-ref
+                                            className="my-2 mr-2 flex h-[1.938rem] w-[1.938rem] items-center justify-center rounded-full bg-[#ebedef] text-sm font-medium text-[#40464f]"
+                                        >
+                                            2
+                                        </span>
+
+                                    </div>
+                                    <p
+                                        data-te-stepper-head-text-ref
+                                        className='text-[#0A0A0A] opacity-60 text-[14px] leading-[22px] font-normal font-sans'
+                                    >
+                                        Payment
+                                    </p>
+                                </li>
+                                <li data-te-stepper-step-ref className="w-[4.5rem] flex-auto">
+
+                                    <div
+                                        data-te-stepper-head-ref
+                                        class="flex cursor-pointer items-center pr-2 leading-[1.3rem] no-underline before:mr-2 before:h-px before:w-full before:flex-1 before:bg-[#e0e0e0] before:content-[''] ">
+                                        <span
+                                            data-te-stepper-head-icon-ref
+                                            className="my-2 mr-2 flex h-[1.938rem] w-[1.938rem] items-center justify-center rounded-full bg-[#ebedef] text-sm font-medium text-[#40464f]"
+                                        >
+                                            3
+                                        </span>
+
+
+                                    </div>
+                                    <p
+                                        data-te-stepper-head-text-ref
+                                        className='text-[#0A0A0A] opacity-60 text-[14px] leading-[22px] font-normal font-sans flex justify-end'
+                                    >
+                                        Mesurement
+                                    </p>
+
+
+                                </li>
+                            </ul>
+                        </div>
+
                 {/* steper code */}
 
 

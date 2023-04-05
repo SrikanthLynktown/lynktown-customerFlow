@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import Navbar from '../Header/Navbar';
 import Image from 'next/image';
+
+import { useRouter } from 'next/router';
 const MeasurementSection = () => {
+    const router = useRouter()
 
     return (
         <>
@@ -57,7 +60,7 @@ const MeasurementSection = () => {
                             <div className="block rounded-lg bg-white  md:border-[1px] md:border-[#6A5B40] ">
                                 <div className='md:w-[550px] lg:w-[814px] md: lg:h-[200px] bg-[#000000] opacity-50 invisible md:visible '>
                                     <div className='md:pt-10 pt-5'>
-                                       
+
                                         <Image className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] rounded-full  shadow-lg mx-auto" src="/images/dumy.jpg" alt="Avatar of Jonathan Reinink"
                                             width={50}
                                             height={50}
@@ -152,54 +155,6 @@ const MeasurementSection = () => {
                                 </li>
                             </ul>
                         </div>
-                        {/* steper code */}
-
-
-                        {/* radio  extra*/}
-
-                        {/* <div className="mx-auto flex justify-center w-[814px] gap-4">
-
-
-
-                        <div className='mx-aut flex rounded border border-[#6A5B40] w-full md:w-1/2 px-3 '>
-                                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-   " />
-                            <select data-te-select-init className='mx-auto '>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                                <option value="4">Four</option>
-                                <option value="5">Five</option>
-                                <option value="6">Six</option>
-                                <option value="7">Seven</option>
-                                <option value="8">Eight</option>
-                            </select>
-
-                        </div>
-
-                        <div className='mx-aut  rounded border border-[#6A5B40] w-full md:w-1/2 px-3 mb-6 md:mb-0 p-2.5'>
-                            <div class="items-center mb-4">
-                                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300   " />
-                            </div>
-                            <select data-te-select-init>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                                <option value="4">Four</option>
-                                <option value="5">Five</option>
-                                <option value="6">Six</option>
-                                <option value="7">Seven</option>
-                                <option value="8">Eight</option>
-                            </select>
-
-                        </div>
-
-                    </div> */}
-
-
-                        {/* radio  extra*/}
-
-
-
 
                         {/* Add Mesurement */}
 
@@ -247,18 +202,12 @@ const MeasurementSection = () => {
                                             <option value="OTHERS">Others</option>
                                         </select>
                                     </div>
-
-
                                     <div className='md:py-6'>
                                         <button className="flex justify-center mx-auto bg-[#6A5B40]  text-white font-bold py-2 px- rounded-full w-[300px] md:w-[344px]" >
-                                            <span className='text-[#FFFFFF] text-[16px] leading-[20px] font-bold font-sans'>Add measurement</span>
+                                            <span className='text-[#FFFFFF] text-[16px] leading-[20px] font-bold font-sans' onClick={() => router.push('/my-measurment')}>Add measurement</span>
                                         </button>
-
-
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>

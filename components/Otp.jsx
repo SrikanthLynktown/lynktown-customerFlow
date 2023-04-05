@@ -61,12 +61,13 @@ const Otp = () => {
 
                   <div className="flex flex-col space-y-5">
                     <div  >
-                      <button className="w-full  md:w-[343px] mx-auto flex justify-center bg-[#6D5C41]  text-[#FFFFFF] text-[16px] leading-[20px] font-bold font-sans py-2 px-4 rounded-full"
+                      <Link href="/home">
+                        <button className="w-full  md:w-[343px] mx-auto flex justify-center bg-[#6D5C41]  text-[#FFFFFF] text-[16px] leading-[20px] font-bold font-sans py-2 px-4 rounded-full"
                         // type='submit' onClick={() => validation() ? router.push('/home')}
-                      >
-                        <Link href="/home">Verify
-                        </Link>
-                      </button>
+                        >
+                          Verify
+                        </button>
+                      </Link>
                     </div>
                     <div className="flex flex-row items-center justify-center text-center text-[16px] font-normal leading-[22px] font-sans space-x-1">
                       <p className='text-[#6C6C6C]  '>Didn’t recieve code?</p>
