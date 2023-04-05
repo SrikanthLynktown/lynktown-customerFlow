@@ -107,7 +107,7 @@ const MeasurementSection = () => {
                                     <p
                                         data-te-stepper-head-text-ref
                                         className="text-[14px] leading-[22px] text-[#0A0A0A] font-normal font-sans md:-ml-6">
-                                        Order Summery
+                                        Order Summary
                                     </p>
 
                                 </li>

@@ -113,7 +113,7 @@ const PaymentSection = () => {
                                     <p
                                         data-te-stepper-head-text-ref
                                         className="text-[12px] leading-[22px] text-[#0A0A0A] font-normal font-sans md:-ml-6">
-                                        Order Summery
+                                        Order Summary
                                     </p>
 
                                 </li>
@@ -149,12 +149,12 @@ const PaymentSection = () => {
 
                             <div className="p-6 md:w-[319px] w-full">
 
-                                <div className=" mx-auto flex items-center justify-center bg-white rounded-lg shadow md:flex-row ">
-                                    {/* <Image
+                                <div className=" mx-auto flex items-center justify-cente bg-white rounded-lg shadow md:flex-row ">
+                                    <Image
                                         className="p-2 object-cover rounded-lg w-[74px] h-[86px] md:h-[94px] md:w-[79px]  md:rounded-lg" src="images/wishlistimg.svg" alt=""
                                         width={10}
                                         height={40}
-                                    /> */}
+                                    />
                                     <div className="flex flex-col text-left  p-2">
                                         <p className='text-[#3B3B3B] text-[12px] leading-[18px] font-normal font-sans italic'>By Designer name</p>
                                         <h5 className="text-[14px] text-[#0A0A0A]   font-medium font-sans leading-[18px] mb">Blue men kurta</h5>
@@ -167,12 +167,12 @@ const PaymentSection = () => {
 
                             </div>
                             <div className="p-6 md:w-[319px] w-full">
-                                <div className=" mx-auto flex justify-center items-center bg-white  rounded-lg shadow md:flex-row ">
-                                    {/* <Image
+                                <div className=" mx-auto flex justify-cente items-center bg-white  rounded-lg shadow md:flex-row ">
+                                    <Image
                                         className="p-2 object-cover w-[74px] h-[86px] rounded-lg  md:h-[94px] md:w-[79px]  md:rounded-lg" src="images/wishlistimg.svg" alt=""
                                         width={10}
                                         height={40}
-                                    /> */}
+                                    />
                                     <div className="flex flex-col text-left  p-2">
                                         <p className='text-[#3B3B3B] text-[12px] leading-[18px] font-normal font-sans italic'>By Designer name</p>
                                         <h5 className="text-[14px] text-[#0A0A0A]   font-medium font-sans leading-[18px] mb">Blue men kurta</h5>
@@ -201,7 +201,7 @@ const PaymentSection = () => {
                                     <div className='border-b-[1px] border-[#CECECE] pb-2'>
                                         <div className="flex gap-28 mb-2">
                                             <p className='text-[#6C6C6C] text-[14px] leading-[18px] font-normal font-sans'>Product Price</p>
-                                            <span className='text-[#3B3B3B]  text-[14px] leading-[18px] font-normal font-sans'>₹2000.00</span>
+                                            <span className='text-[#3B3B3B] mx-auto text-[14px] leading-[18px] font-normal font-sans'>₹2000.00</span>
                                         </div>
 
                                         <div className="flex gap-28">

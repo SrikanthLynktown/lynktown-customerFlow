@@ -54,7 +54,7 @@ const Otp = () => {
                     <label htmlFor="" className='text-[#0A0A0A] text-[14px] leading-[18px] font-normal font-sans invisible md:visible'>Enter Otp</label>
                     <input
                       type="text"
-                      className="peer block min-h-[auto] w-full md:w-[343px] lg:w-[343px] rounded border border-[#000000] py-[0.32rem] px-3 leading-[18px] outline-none border-opacity-40 text-[#9D9D9D]  text-[14px] font-normal font-sans"
+                      className="peer block h-[44px] w-full md:w-[343px] lg:w-[343px] rounded border border-[#000000] py-[0.32rem] px-3 leading-[18px] outline-none border-opacity-40 text-[#9D9D9D]  text-[14px] font-normal font-sans"
                       id="exampleFormControlInput2"
                       placeholder="8000" />
                   </div>

@@ -31,7 +31,7 @@ const MeasurmentDetails = () => {
 
 
                 <div className='invisible md:visible md:-mt-8 -mt-0 '>
-                    <div className='px-64  flex gap-1 '>
+                    <div className='md:px-64  flex gap-1 '>
                         <span className='text-[#9D8E73] text-[18px] font-medium font-sans '>Home</span>
                         <span className='text-[#9D8E73] text-[18px] font-medium font-sans'>/</span>
                         <span className='text-[#9D8E73] text-[18px] font-medium font-sans'>Men</span>
@@ -40,30 +40,30 @@ const MeasurmentDetails = () => {
 
 
                     </div>
-                    
+
                 </div>
 
                 <section className="text-gray-600 body-font overflow-hidden">
-                    <div className="container px-5 py-4 mx-auto">
-                        <div className="lg:w-4/5 mx-auto flex flex-wrap">
+                    <div className="container px-5 md:py-4 mx-auto">
+                        <div className="lg:w-4/5 mx-auto flex flex-wrap gap-6">
 
+                            <div className="bg-[#E6E3DC] h-[710px] md:h-[840px]  md:mt-7 lg:w-[264px] w-full">
+                                <div className=" lg:h-[400px ">
 
-                            <div className="lg:w-1/4 w-full lg:h-[400px]">
-
-                                <Swiper className="mySwiper">
-                                    <SwiperSlide>
-                                        <img alt="ecommerce" className="md:h-[900px] h-full lg:pr-10 lg:py-6 mb-6 lg:mb-0  object-cover object-center rounded" src="images/dumy.jpg" />
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <img alt="ecommerce" className="md:h-[900px] lg:pr-10 lg:py-6 mb-6 lg:mb-0  object-cover object-center rounded" src="images/dumy.jpg" />
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <img alt="ecommerce" className="md:h-[900px] lg:pr-10 lg:py-6 mb-6 lg:mb-0  object-cover object-center rounded" src="images/dumy.jpg" />
-                                    </SwiperSlide>
-                                </Swiper>
-
+                                    <Swiper className="mySwiper">
+                                        <SwiperSlide>
+                                            <Image width={264} height={776} alt="ecommerce" className=" md:h-[776px] h-[700px]  mx-aut justify-cente p-4 w-[264px] lg:py- mb- lg:mb-0  object-cover object-center rounded" src="/images/man.svg" />
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                        <Image width={264} height={100} alt="ecommerce" className="md:h-[776px] mx-aut justify-cente p-4 w-[264px] h-full  lg:py- mb- lg:mb-0  object-cover object-center rounded" src="/images/man.svg" />
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                        <Image width={264} height={100} alt="ecommerce" className="md:h-[776px] mx-aut justify-cente p-4 w-[264px] h-full  lg:py- mb- lg:mb-0  object-cover object-center rounded" src="/images/man.svg" />
+                                        </SwiperSlide>
+                                    </Swiper>
+                                </div>
                             </div>
-                            <div className="lg:w-3/4 w-full pt-7">
+                            <div className="lg:w-[569px] w-full pt-7">
 
                                 <div className="md:w-[425px] px-4 md:h-[223px] border-[1px] border-[#857250] bg-[#E6E3DC] rounded-lg ">
                                     <div className="flex gap-1">
