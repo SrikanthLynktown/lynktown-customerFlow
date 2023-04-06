@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
 
-const Modal = ({ show, onClose, children, title }) => {
+const MeasurmentModal = ({ show, onClose, children, title }) => {
     const [isBrowser, setIsBrowser] = useState(false);
 
     useEffect(() => {
@@ -16,8 +16,8 @@ const Modal = ({ show, onClose, children, title }) => {
 
     const modalContent = show ? (
         <StyledModalOverlay>
-            <StyledModal>
-                <StyledModalHeader>
+            <StyledModal className="shadow-2xl  mt-[2780px]  md:mt-[360px] w-[367px] h-[350px] md:w-[645px] md:h-[341px] z-10 ">
+                <StyledModalHeader className="px-6">
                     <a href="#" onClick={handleCloseClick}>
                         x
                     </a>
@@ -39,7 +39,7 @@ const Modal = ({ show, onClose, children, title }) => {
 };
 
 const StyledModalBody = styled.div`
-  padding-top: 10px;
+  padding-top: px;
 `;
 
 const StyledModalHeader = styled.div`
@@ -50,10 +50,11 @@ const StyledModalHeader = styled.div`
 
 const StyledModal = styled.div`
   background: white;
-  ${'' /* width: 500px; */}
-  height: 600px;
-  border-radius: 15px;
-  padding: 15px;
+  ${'' /* width: 567px;
+  height: 396px; */}
+  border-radius: 5px;
+  padding: px;
+  ${'' /* margin-top:510px; */}
 `;
 const StyledModalOverlay = styled.div`
   position: absolute;
@@ -71,4 +72,4 @@ const StyledModalOverlay = styled.div`
 const StyledModalTitle = styled.div`
   padding-left:0.1px
 `;
-export default Modal;
+export default MeasurmentModal;

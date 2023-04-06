@@ -1,25 +1,50 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Navbar from '../Header/Navbar';
-import Modal from '../ModalComponents/Modal';
+import PaymentModal from '../ModalComponents/PaymentModal';
 const PaymentSection = () => {
     const [showModal, setShowModal] = useState(false);
 
     return (
         <>
-            <div className='mb-20'>
+            <div className='mb-'>
                 <div className='invisible md:visible'>
                     <Navbar />
                 </div>
                 <div style={{ width: '50%' }} className='w-[10p]'>
-                    <Modal width={70} height={10} className="" styles={{ width: '10%' }}
+                    <PaymentModal width='70' height={10} className="" styles={{ width: '10%' }}
                         onClose={() => setShowModal(false)}
                         show={showModal}
                     >
-                        Hello from the modal!
-                    </Modal>
+                        <div className='mx-auto justify-center'>
+                            <div className=''>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="mx-auto w-16 h-16 text-white bg-[#25D366] rounded-full">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                </svg>
+                            </div>
+                            <div className='mx-auto text-center '>
+                                <h6 className=' mt-4 md:mt-7 mx-auto w-[308px] md:w-[502px] text-[#000000] text-[28px] md:text-[30px] font-medium leading-[20px] font-sans '>Payment is successful</h6>
+                                <p className=' mt-4 md:mt-7 w-[284px] md:w-[452px] text-center mx-auto text-[#3B3B3B] text-[16px] leading-[26px] font-sans font-normal '>You can add your measurement now or later</p>
+                            </div>
+
+                            <div className=' mx-auto mt-3  md:mt-5 bg-[#6A5B40] w-[236px] md:w-[330px] h-[48px] rounded-[5px]'>
+                                <button className='mx-auto flex items-center h-[48px] text-[#FFFFFF] text-[16px] leading-[20px] font-bold font-sans '>
+                                    Add measurement
+                                </button>
+                            </div>
+
+                            <div className='mx-auto mt-3 md:mt-5 w-[236px] border-[1px] border-[#FF543E]  md:rounded-[5px] md:w-[330px] h-[48px]'>
+                                <button className=' mx-auto flex items-center text-[#FF543E]  w-[95px] h-[48px] text-[16px] leading-[20px] font-bold font-sans'>
+                                I’ll do it later
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </PaymentModal>
                 </div>
-                <div className='pb-4 px-4 md:p-0 visible md:invisible border-b-[1px] border-[#000000] border-opacity-20'>
+                <div className='pb-4 -mt-14 md:-mt-0 px-4 md:p-0 visible md:invisible border-b-[1px] border-[#000000] border-opacity-20'>
                     <div className="flex w-full flex-wrap items-center justify-between">
                         <div
                             className="flex gap-6 text-[#0A0A0A]">
@@ -29,7 +54,7 @@ const PaymentSection = () => {
                                 width={12}
                                 height={12}
                             />
-                            <div className='text-[#0A0A0A] text-[18px] leading-[28px] font-normal font-serif '>Add Address</div>
+                            <div className='text-[#0A0A0A] text-[18px] leading-[28px] font-normal font-serif '>Payment</div>
                         </div>
                     </div>
                 </div>
@@ -221,7 +246,7 @@ const PaymentSection = () => {
 
 
                         <div className='py-4'>
-                            <button className="flex gap-4  justify-center mx-auto bg-[#6A5B40]  text-white font-bold py-2 px-4 rounded-full w-[310px]" onClick={() => setShowModal(true)}>
+                            <button className="flex gap-4 items-center justify-center mx-auto bg-[#6A5B40]  text-white font-bold py-2 px-4 rounded-full w-[343px] h-[48px]" onClick={() => setShowModal(true)}>
                                 <span className='text-[#FFFFFF] text-[16px] leading-[20px] font-bold font-sans'>Pay</span>
                             </button>
                         </div>

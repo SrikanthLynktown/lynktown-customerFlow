@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Navbar from "../Header/Navbar";
 import Image from "next/image";
+import MeasurmentModal from "../ModalComponents/MeasurmentModal";
 
 const MeasurmentDetails = () => {
+
+    const [measurmentModal, setMeasurmentModal] = useState(false)
     return (
         <>
             <div>
@@ -12,6 +15,32 @@ const MeasurmentDetails = () => {
                     <Navbar />
                 </div>
 
+                <MeasurmentModal
+                    onClose={() => setMeasurmentModal(false)}
+                    show={measurmentModal}
+                >
+                    <div className='mx-auto justify-center'>
+                        <div className=''>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="mx-auto w-16 h-16 text-white bg-[#25D366] rounded-full">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                            </svg>
+                        </div>
+                        <div className='mx-auto text-center '>
+                            <h6 className=' mt-4 md:mt-7 mx-auto w-[315px] md:w-[586px] md:h-[49px] text-[#000000] text-[18px] md:text-[30px] font-medium leading-[22px] md:leading-[36px] font-sans '>Your measurement is successfully added
+                                and order placed</h6>
+                        </div>
+
+
+                        <div className='mt-14 md:mt-14 mx-auto m bg-[#6A5B40] w-[236px] md:w-[330px] h-[48px] rounded-[5px]'>
+                            <button className='mx-auto flex items-center h-[48px] text-[#FFFFFF] text-[16px] leading-[20px] font-bold font-sans '>
+                            Back to home
+                            </button>
+                        </div>
+
+                    </div>
+
+                </MeasurmentModal>
 
                 <div className='p-4 md:p-0 visible md:invisible border-b-[1px] border-[#000000] border-opacity-20 -mt-20 md:-mt-0'>
                     <div className="flex w-full flex-wrap items-center justify-between">
@@ -55,10 +84,10 @@ const MeasurmentDetails = () => {
                                             <Image width={264} height={776} alt="ecommerce" className=" md:h-[776px] h-[700px]  mx-aut justify-cente p-4 w-[264px] lg:py- mb- lg:mb-0  object-cover object-center rounded" src="/images/man.svg" />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                        <Image width={264} height={100} alt="ecommerce" className="md:h-[776px] mx-aut justify-cente p-4 w-[264px] h-full  lg:py- mb- lg:mb-0  object-cover object-center rounded" src="/images/man.svg" />
+                                            <Image width={264} height={100} alt="ecommerce" className="md:h-[776px] mx-aut justify-cente p-4 w-[264px] h-full  lg:py- mb- lg:mb-0  object-cover object-center rounded" src="/images/man.svg" />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                        <Image width={264} height={100} alt="ecommerce" className="md:h-[776px] mx-aut justify-cente p-4 w-[264px] h-full  lg:py- mb- lg:mb-0  object-cover object-center rounded" src="/images/man.svg" />
+                                            <Image width={264} height={100} alt="ecommerce" className="md:h-[776px] mx-aut justify-cente p-4 w-[264px] h-full  lg:py- mb- lg:mb-0  object-cover object-center rounded" src="/images/man.svg" />
                                         </SwiperSlide>
                                     </Swiper>
                                 </div>
@@ -195,11 +224,11 @@ const MeasurmentDetails = () => {
 
 
                                 <div className="md:py-6">
-                                    <button className="invisible md:visible w-[190px] h-[45px] bg-[#6A5B40]  text-[#FFFFFF] text-[16px] leading-[20px] font-bold font-sans rounded">
-                                        Edit
+                                    <button className="invisible md:visible w-[190px] h-[45px] bg-[#6A5B40]  text-[#FFFFFF] text-[16px] leading-[20px] font-bold font-sans rounded" onClick={() => setMeasurmentModal(true)}>
+                                        Save
                                     </button>
 
-                                    <button className="visible md:invisible w-full h-[45px] border-[1px] border-[#000000] text-[#6A5B40] text-[16px] leading-[20px] font-bold font-sans rounded">
+                                    <button className="visible md:invisible w-full h-[45px] border-[1px] border-[#000000] text-[#6A5B40] text-[16px] leading-[20px] font-bold font-sans rounded" onClick={() => setMeasurmentModal(true)}>
                                         Edit
                                     </button>
                                 </div>

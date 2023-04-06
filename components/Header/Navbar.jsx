@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import Image from 'next/image';
 import ProfileModal from '../ModalComponents/Profilemodal';
+import { useRouter } from 'next/router';
 const Navbar = () => {
     const [dropDown, setDropDown] = useState(false)
-
+    const router = useRouter()
     return (
         <>
             <nav
@@ -89,7 +90,9 @@ const Navbar = () => {
                             id="dropdownMenuButton1"
                             role="button"
                             data-te-dropdown-toggle-ref
-                            aria-expanded="false">
+                            aria-expanded="false"
+                            onClick={() => router.push('/usernotify')}
+                        >
                             <Image
                                 src='icons/notification.svg'
                                 className="w-[18px] h-[19px] md:h-[25px] md:w-[30px]"

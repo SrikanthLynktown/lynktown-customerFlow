@@ -161,7 +161,7 @@ const HomePage = () => {
                             />
                             <h6 className='text-[#9D9D9D]  text-[14px] leading:[18px] md:text-[23px] md:leading-[30px]  font-medium font-sans cursor-pointer'>Feed</h6>
                         </div>
-                        <div>
+                        <div className='cursor-pointer' onClick={() => router.push('/profile')}>
                             <Image
                                 src='icons/userprofile.svg'
                                 alt=''
