@@ -7,9 +7,9 @@ const LandingTwo = ({ setLandingPage }) => {
         <>
             <div className="flex justify-center bg-[#6A5B40] lg:min-h-screen md:py-6 " >
                 <div className="">
-                    <div className="container h-full">
+                    <div className="">
                         <div
-                            className="g- flex flex-wrap items-center justify-center md:w-[706px]">
+                            className="g- flex flex-wrap items-center justify-center md:w-[706px] grayscale md:grayscale-0">
                             <div className="">
                                 <div
                                     className="block rounded-lg bg-white">
@@ -47,9 +47,9 @@ const LandingTwo = ({ setLandingPage }) => {
                                                 <p className="px- text-[#FFFFFF] md:text-[#000000] flext justify-center  opacity-70  md:text-[16px] font-normal font-sans leading-[22px] ">
                                                     Buy the way you want it. Customized or ready-made products, it’s your choice
                                                 </p>
-                                                <div className="flex mt-20 gap-2 mx-auto justify-center">
+                                                <div className="flex mt-20 gap-2 mx-auto justify-center w-[280px]">
                                                     <div className='h-1 text-[#FFFFFF] md:text-[#000000] text-[20px] leading-[28px] font-normal font-serif'>02</div>
-                                                    <div class="w-[132px]  bg-gray-200 rounded-full h-1 mt-4">
+                                                    <div class="w-[132px]  bg-gray rounded-full h-1 mt-4">
                                                         <div class="bg-[#000000] h-1 rounded-full  w-[44px] ml-5" ></div>
                                                     </div>
                                                     <div className='h-1 text-[#FFFFFF] md:text-[#000000] text-[20px] leading-[28px] font-normal font-serif'>03</div>

@@ -57,7 +57,7 @@ const MyMeasurment = () => {
                     <div className="md:container md:px-5 px-3 mx-auto">
 
 
-                     
+
 
                         <div className="flex flex-wrap -mt-14 md:-mt-0">
                             <div className="md:p-4  md:w-[344px] w-full ">
@@ -172,7 +172,7 @@ const MyMeasurment = () => {
 
 
 
-{/* 
+                    {/* 
                     <div className="mb-4 md:px-32 px-4 flex flex-wrap gap-4" >
                         <div className={styles.bgImg}>
                             <div className={styles.background}>

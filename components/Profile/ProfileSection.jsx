@@ -38,7 +38,7 @@ const ProfileSection = () => {
                     </div>
 
                     <div class="flex justify-center mx-auto">
-                        <div class="block w-[376px] md:w-[805px] md:h-[637px] h-full md:border-[1px] border-[#6A5B40] rounded-lg bg-white p- shadow-lg ">
+                        <div class="block w-[376px] md:w-[805px] md:h-[700px] h-full md:border-[1px] border-[#6A5B40] rounded-lg bg-white p- shadow-lg ">
 
                             <div className=' relative bg-[#857250] md:w-[804px] md:h-[249px] h-[150px] md:rounded-lg'>
                                 <div className=''>
@@ -148,7 +148,7 @@ const ProfileSection = () => {
 
 
 
-                                <div className="flex gap-4 px-6 md:px-8 md:pb-20 pb-5 mt-6">
+                                <div className="flex gap-4 px-6 md:px-8 md:pb- pb- mt-6">
                                     <p className='text-[#000000] opacity-40 text-[14px] leading-[18px] font-normal font-sans '>Need help? </p>
                                     <Image
                                         src='icons/whatsapp.svg'
@@ -156,9 +156,15 @@ const ProfileSection = () => {
                                         height={20}
                                         alt=''
                                     />
-                                </div>
 
+                                </div>
+                                <div className='md:pb-20 pb-4 px-6'>
+                                    <button class="mt-6  mx-auto justify-center items-center flex bg-[#857250]  text-white font-bold md:w-[200px] w-full h-[48px] rounded-full">
+                                        Save
+                                    </button>
+                                </div>
                             </div>
+
                         </div>
                     </div>
 

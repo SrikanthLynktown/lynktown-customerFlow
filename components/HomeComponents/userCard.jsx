@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '../Header/Navbar';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import LinkModal from '../ModalComponents/LinkModal';
 const UserCard = () => {
     const router = useRouter()
+    // const [linkModal, setLinkModal] = useState(false)
+    const [showModal, setShowModal] = useState(false);
+
     return (
         <>
 
@@ -15,6 +19,25 @@ const UserCard = () => {
                     <Navbar />
                 </div>
 
+                <LinkModal
+                    onClose={() => setShowModal(false)}
+                    show={showModal}
+                >
+
+                    <div className='mx-auto'>
+                        <Image
+                            src='icons/crosslogo.svg'
+                            width={44}
+                            height={44}
+                            alt=''
+                            className='mx-auto mt- md:mt-7'
+                        />
+
+                        <h6 className='text-center mt-4 md:mt-7 text-[#DA1E28] text-[30px] leading-[31px] font-sans font-bold '>This Link is Invalid </h6>
+                        <p className='text-center mt-4 md:mt-7 text-[#0A0A0A] opacity-80 text-[16px] leading-[22px] font-normal font-sans w-[264px] md:w-[330px] mx-auto '>Please contact fashion designer to get a valid link </p>
+                    </div>
+
+                </LinkModal>
                 <div className='p-4 md:p-0 visible md:invisible border-b-[1px] border-[#000000] border-opacity-20 -mt-20 md:-mt-0'>
                     <div className="flex w-full flex-wrap items-center justify-between">
                         <div
@@ -27,25 +50,7 @@ const UserCard = () => {
                             />
                             <div className='text-[#0A0A0A] text-[18px] leading-[28px] font-normal font-serif '>Lynks</div>
                         </div>
-                        {/* <div className="relative flex items-center">
-                            <div className="relative ">
-                                <a className="hidden-arrow  flex" href="#">
-                                    <span>
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 24 24"
-                                            fill="currentColor"
-                                            className="w-[24px] h-[24px]">
-                                            <path
-                                                fill-rule="evenodd"
-                                                d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </span>
 
-                                </a>
-                            </div>
-                        </div> */}
                     </div>
                 </div>
 
@@ -89,16 +94,16 @@ const UserCard = () => {
                                     </a>
                                 </div>
                             </div>
-                            <div className="py-4" onClick={() => router.push('/order-summery')}>
-                                <button className="bg-[#3AC267]  text-white text-[10px] md:text-[12px] leading-[13px] md:leading-[16px] font-sans font-medium py-1 px-4 rounded-full">
+                            <div className="py-4" >
+                                <button className="bg-[#3AC267]  text-white text-[10px] md:text-[12px] leading-[13px] md:leading-[16px] font-sans font-medium py-1 px-4 rounded-full" onClick={() => router.push('/order-summery')}>
                                     New
                                 </button>
 
                                 <div className='flex text-[#000000] justify-between pt-2'>
-                                    <a href="" className='underline text-[14px] leading-[18px] font-normal font-sans '>u2lynk.com/id=5234</a>
+                                    <a href="" className='underline text-[14px] leading-[18px] font-normal font-sans' onClick={() => setShowModal(true)} >u2lynk.com/id=5234</a>
                                     <p className='text-[18px] leading-[28px] font-bold font-sans'>$8000</p>
                                 </div>
-                                <h6 className='text-[#000000] text-[22px] md:text-[20px] leading-[21px] font-normal font-serif italic'>By Designer name</h6>
+                                <h6 className='text-[#000000] text-[22px] md:text-[20px] leading-[21px] font-normal font-serif italic' >By Designer name</h6>
                                 <p className='text-[#000000] text-[12px] leading-[16px] font-medium font-sans pt-2'>Total no of products (1)</p>
 
                                 <div className='flex text-[#000000] justify-between mt-2'>
@@ -159,7 +164,7 @@ const UserCard = () => {
                             </div>
                             <div className="py-4">
                                 <button className=" text-[#FF6C59] text-[10px] md:text-[12px] leading-[13px] md:leading-[16px] font-sans font-medium py-1">
-                                Measurement pending
+                                    Measurement pending
                                 </button>
 
                                 <div className='flex text-[#000000] justify-between pt-2'>
@@ -193,7 +198,7 @@ const UserCard = () => {
                             </div>
                             <div className="py-4">
                                 <button className="bg-[#D9F2E0]  text-[#4C4D4C] text-[10px] md:text-[12px] leading-[13px] md:leading-[16px] font-sans font-medium py- px-2 rounded-full">
-                                Completed
+                                    Completed
                                 </button>
 
                                 <div className='flex text-[#000000] justify-between pt-2'>

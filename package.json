@@ -25,6 +25,7 @@
     "sass": "^1.60.0",
     "styled-components": "^5.3.9",
     "swiper": "^9.2.0",
+    "tailgrids": "^2.0.1",
     "tw-elements": "^1.0.0-beta1",
     "yup": "^1.0.2"
   },

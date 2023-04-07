@@ -2,12 +2,16 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Navbar from '../Header/Navbar';
 import PaymentModal from '../ModalComponents/PaymentModal';
+import ToggleButton from '../Header/ToggleButton';
+import { useRouter } from 'next/router';
+
 const PaymentSection = () => {
     const [showModal, setShowModal] = useState(false);
+    const router=useRouter()
 
     return (
         <>
-            <div className='mb-'>
+            <div className='mb- '>
                 <div className='invisible md:visible'>
                     <Navbar />
                 </div>
@@ -36,7 +40,7 @@ const PaymentSection = () => {
 
                             <div className='mx-auto mt-3 md:mt-5 w-[236px] border-[1px] border-[#FF543E]  md:rounded-[5px] md:w-[330px] h-[48px]'>
                                 <button className=' mx-auto flex items-center text-[#FF543E]  w-[95px] h-[48px] text-[16px] leading-[20px] font-bold font-sans'>
-                                I’ll do it later
+                                    I’ll do it later
                                 </button>
                             </div>
                         </div>
@@ -114,6 +118,7 @@ const PaymentSection = () => {
                         </div>
 
 
+
                         {/* steper code */}
 
                         <div className='px-6 pb-6 -mt-6  md:-mt-0 md:pb-0'>
@@ -129,7 +134,7 @@ const PaymentSection = () => {
                                         className="flex cursor-pointer items-center pl-2 after:h-px after:w-full after:flex-1 after:bg-[#e0e0e0]">
                                         <span
                                             data-te-stepper-head-icon-ref
-                                            className="my-2 mr-2 flex h-[1.938rem] w-[1.938rem] items-center justify-center rounded-full bg-[#ebedef] text-sm font-medium text-[#40464f]">
+                                            className="my-2 mr-2 flex h-[1.938rem] w-[1.938rem] items-center justify-center rounded-full bg-[#6A5B40] text-sm font-medium text-[#FFFFFF]">
                                             1
                                         </span>
 
@@ -148,7 +153,7 @@ const PaymentSection = () => {
                                         className="flex cursor-pointer items-center leading-[1.3rem] no-underline before:mr-2 before:h-px before:w-full before:flex-1 before:bg-[#e0e0e0] before:content-[''] after:ml-2 after:h-px after:w-full after:flex-1 after:bg-[#e0e0e0] after:content-['']">
                                         <span
                                             data-te-stepper-head-icon-ref
-                                            className="my-2 mr-2 flex h-[1.938rem] w-[1.938rem] items-center justify-center rounded-full bg-[#ebedef] text-sm font-medium text-[#40464f]"
+                                            className="my-2 mr-2 flex h-[1.938rem] w-[1.938rem] items-center justify-center rounded-full bg-[#6A5B40] text-sm font-medium text-[#FFFFFF]"
                                         >
                                             2
                                         </span>
@@ -169,10 +174,10 @@ const PaymentSection = () => {
 
                         {/* blue card */}
 
-                        <div className='bg-[#EEECE7] flex flex-wrap gap-2 p-4 mx-auto justify-center'>
+                        <div className='bg-[#EEECE7] flex flex-wrap gap-2 md:p-4 mx-auto justify-center'>
 
 
-                            <div className="p-6 md:w-[319px] w-full">
+                            <div className="p-4 md:p-6  md:w-[319px] w-full">
 
                                 <div className=" mx-auto flex items-center justify-cente bg-white rounded-lg shadow md:flex-row ">
                                     <Image
@@ -189,9 +194,20 @@ const PaymentSection = () => {
                                     </div>
                                 </div>
 
+                                <div className='flex gap-4 mt-4'>
+                                    <p className='text-[#3B3B3B] text-[12px] leading-[20px] font-bold font-sans w-[157px]'>Exchange within  <span className='text-[#DA1E28]'>6 days</span></p>
+                                    <p className='text-[#3B3B3B] text-[12px] leading-[20px] font-bold font-sans w-[137px] '>Return within   <span className='text-[#DA1E28]'>6 days</span></p>
+                                </div>
 
+                                <div className='mt-3'>
+                                    <p className='text-[#3B3B3B] text-[12px] leading-[18px] font-medium font-sans'>Select your prefered size</p>
+                                </div>
+                                {/* toggele button */}
+                                <div className='mt-3'>
+                                    <ToggleButton />
+                                </div>
                             </div>
-                            <div className="p-6 md:w-[319px] w-full">
+                            <div className="p-4 md:p-6 md:w-[319px] w-full">
                                 <div className=" mx-auto flex justify-cente items-center bg-white  rounded-lg shadow md:flex-row ">
                                     <Image
                                         className="p-2 object-cover w-[74px] h-[86px] rounded-lg  md:h-[94px] md:w-[79px]  md:rounded-lg" src="images/wishlistimg.svg" alt=""
@@ -205,6 +221,21 @@ const PaymentSection = () => {
                                         <a href="" className='text-[#1A5E9D] underline text-[12px] font-normal font-sans leading-[20px] mb-'>Product lynk</a>
                                         <p className='text-[14px] text-[#3B3B3B]   font-medium font-sans leading-[18px]'>Size:  M</p>
                                     </div>
+
+
+                                </div>
+
+                                <div className='flex gap-4 mt-4'>
+                                    <p className='text-[#3B3B3B] text-[12px] leading-[20px] font-bold font-sans w-[157px]'>Exchange within  <span className='text-[#DA1E28]'>6 days</span></p>
+                                    <p className='text-[#3B3B3B] text-[12px] leading-[20px] font-bold font-sans w-[137px] '>Return within   <span className='text-[#DA1E28]'>6 days</span></p>
+                                </div>
+
+                                <div className='mt-3'>
+                                    <p className='text-[#3B3B3B] text-[12px] leading-[18px] font-medium font-sans'>Select your prefered size</p>
+                                </div>
+                                {/* toggele button */}
+                                <div className='mt-3'>
+                                    <ToggleButton />
                                 </div>
 
 
@@ -215,38 +246,88 @@ const PaymentSection = () => {
                         {/* blue card */}
 
                         {/* Price details */}
+                        <div className='md:border-[2px] border-[#CECECE]'>
+                            <div className='py-8 px-4'>
+                                <h6 className='mb-5 md:text-center text-[#000000] text-[18px] leading-[18px] font-medium font-sans '>Shipping and payment details</h6>
 
-                        <div className='mt-3 bg-[#EEECE7] border-b-[1px] border-[#CECECE]'>
-                            <div className="flex justify-center">
                                 <div
-                                    className="block max-w-sm p-4">
-                                    <h5 className="mb-3 text-[#000000] text-[16px] leading-[20px] font-bold font-sans">
-                                        Price Details
-                                    </h5>
-                                    <div className='border-b-[1px] border-[#CECECE] pb-2'>
-                                        <div className="flex gap-28 mb-2">
-                                            <p className='text-[#6C6C6C] text-[14px] leading-[18px] font-normal font-sans'>Product Price</p>
-                                            <span className='text-[#3B3B3B] mx-auto text-[14px] leading-[18px] font-normal font-sans'>₹2000.00</span>
-                                        </div>
+                                    class="block max-w-sm md:mx-auto rounded-lg bg-white  shadow-lg  border-[1px] border-[#9D8E73]">
+                                    <div class=" md:w-[382px]  w-full border-b-[0.5px] border-[#CECECE] pb-2" >
 
-                                        <div className="flex gap-28">
-                                            <p className='text-[#6C6C6C] text-[14px] leading-[18px] font-normal font-sans'>Delivery Charges</p>
-                                            <span className='mx-auto text-[#42BE65] text-[14px] leading-[18px] font-normal font-sans'>₹99</span>
+                                        <div className="flex mx-auto justify-between md:p- ">
+                                            <div className="flex md:p-4 p-2 md:gap-20 ">
+                                                <div class="flex items-center ">
+                                                    <input id="default-radio-1" type="radio" value="" name="default-radio" class="invisible md:visible w-4 h-4 text-blue-600 bg-gray-100" />
+                                                    <label class="-ml-2 md:ml-2 text-[16px] leading-[20px] md:font-bold font-normal ">John Hamilton</label>
+                                                </div>
+
+                                                <div className=''>
+                                                    <button class="bg-[#E6E3DC] md:-ml-10 text-[#6A5B40] text-[12px] leading-[17px]  font-serif font-bold py- px-2 rounded-full">
+                                                        Home
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                            <div className='md:pt-4 pt-2'>
+                                                <button class="bg-[#3AC267]  py-1 px-4 rounded-full ">
+                                                    <p className="text-[10px]  text-[#FFFFFF] font-normal font-sans">Selected</p>
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                        <p className="md:px-4 px-2 text-[#6C6C6C] text-[14px] leading-[18px] font-normal ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p>
+                                        <div className="flex md:px-4 px-2">
+                                            <h6 className="text-[#0A0A0A] text-[14px] leading-[18px] font-normal font-sans">Mobile:</h6>
+                                            <span className="text-[#6C6C6C] text-[14px] leading-[18px] font-normal font-sans">+91 9749477620</span>
                                         </div>
                                     </div>
+                                    <div className="flex  px-24 ">
+                                        <div className="border-r-[0.5px] border-[#CECECE]  mx-auto">
+                                            <p className="-ml-20 text-[#857250] text-[16px] leading-[20px] font-bold py-2">Edit</p>
 
-                                    <div className="flex gap-24 pt-2">
-                                        <p className='text-[#000000] text-[20px] leading-[18px] font-bold font-sans '>Total Ammount</p>
-                                        <span className='text-[#000000] text-[20px] leading-[18px] font-bold font-sans '>₹2099.00</span>
+                                        </div>
+                                        <p className="py-2 text-[#DA1E28] text-[16px] leading-[20px] font-bold">Change</p>
                                     </div>
+                                </div>
+
+
+                                <div className='mt-10' onClick={()=>router.push('/address')}>
+                                    <p className=' text-center text-[#6A5B40] text-[16px] leading-[24px] font-bold font-sans cursor-pointer '>Add New Address +</p>
                                 </div>
                             </div>
 
+                            <div className='mt-3 bg-[#EEECE7] '>
+
+                                <div className="flex justify-center">
+                                    <div
+                                        className="block max-w-sm p-4">
+                                        <h5 className="mb-3 text-[#000000] text-[16px] leading-[20px] font-bold font-sans">
+                                            Price Details
+                                        </h5>
+                                        <div className='border-b-[1px] border-[#CECECE] pb-2'>
+                                            <div className="flex gap-28 mb-2">
+                                                <p className='text-[#6C6C6C] text-[14px] leading-[18px] font-normal font-sans'>Product Price</p>
+                                                <span className='text-[#3B3B3B] mx-auto text-[14px] leading-[18px] font-normal font-sans'>₹2000.00</span>
+                                            </div>
+
+                                            <div className="flex gap-28">
+                                                <p className='text-[#6C6C6C] text-[14px] leading-[18px] font-normal font-sans'>Delivery Charges</p>
+                                                <span className='mx-auto text-[#42BE65] text-[14px] leading-[18px] font-normal font-sans'>₹99</span>
+                                            </div>
+                                        </div>
+
+                                        <div className="flex gap-24 pt-2">
+                                            <p className='text-[#000000] text-[20px] leading-[18px] font-bold font-sans '>Total Ammount</p>
+                                            <span className='text-[#000000] text-[20px] leading-[18px] font-bold font-sans '>₹2099.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
 
-
                         <div className='py-4'>
-                            <button className="flex gap-4 items-center justify-center mx-auto bg-[#6A5B40]  text-white font-bold py-2 px-4 rounded-full w-[343px] h-[48px]" onClick={() => setShowModal(true)}>
+                            <button className="flex gap-4 items-center justify-center mx-auto bg-[#6A5B40]  text-white font-bold py-2 px-4 rounded-[5px] md:rounded-full w-[343px] h-[48px]" onClick={() => setShowModal(true)}>
                                 <span className='text-[#FFFFFF] text-[16px] leading-[20px] font-bold font-sans'>Pay</span>
                             </button>
                         </div>

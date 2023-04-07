@@ -7,11 +7,11 @@ const LandingPageThree = ({ setLandingPage }) => {
     const router = useRouter()
     return (
         <>
-            <div className="flex justify-center bg-[#6A5B40] lg:min-h-screen md:py-4">
+            <div className="flex justify-center bg-[#6A5B40] lg:min-h-screen  md:py-10">
                 <div className="">
-                    <div className="container h-full">
+                    <div className="">
                         <div
-                            className="g- flex flex-wrap items-center justify-center lg:w-[706px]">
+                            className="g- flex flex-wrap items-center justify-center lg:w-[706px] grayscale md:grayscale-0">
                             <div className="">
                                 <div
                                     className="block rounded-lg bg-white">
@@ -22,7 +22,7 @@ const LandingPageThree = ({ setLandingPage }) => {
                                                 <Image src="/images/landingimg3.svg" alt=""
                                                     width={326}
                                                     height={601}
-                                                    className='h-[610px] object-cover w-full  md:h-[601px] '
+                                                    className='h-[601px] object-cover w-full  md:h-[601px] '
                                                 />
                                             </div>
                                         </div>

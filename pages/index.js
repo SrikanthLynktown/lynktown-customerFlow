@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+
 // import { Inter } from "next/font/google";
 import Landing from "@/components/Landing";
 import LandingTwo from "@/components/Landing2";
@@ -15,7 +16,7 @@ export default function Home() {
   return (
     <>
       <div>
-        <div className="invisible md:visible md">
+        <div className="invisible md:visible md overflow-y-hidden  ">
           {
             LandingPage === 1 && <Landing setLandingPage={setLandingPage} />
 
