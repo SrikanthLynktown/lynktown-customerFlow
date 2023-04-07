@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* .background{
+    min-height: vh;
+    display: flex;
+} */
+.background{
+    background-image: url(../public/images/blazer.jpg);
+    background-color: red;
+}
+
+.trs{
+    /* background-color: red; */
+}
