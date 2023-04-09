@@ -55,9 +55,7 @@ const LandingTwo = ({ setLandingPage }) => {
                                                     <div className='h-1 text-[#FFFFFF] md:text-[#000000] text-[20px] leading-[28px] font-normal font-serif'>03</div>
                                                 </div>
                                             </div>
-                                        </div>
-
-                                        
+                                        </div>                                      
                                     </div>
                                 </div>
                             </div>

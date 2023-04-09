@@ -57,9 +57,9 @@ const MyAddress = () => {
 
 
 
-                    <div class="block max-w-sm rounded-lg bg-white  items-center shadow-lg dark:bg-neutral-700 border-dotted border-2 border-[#CEC7B9] ">
-                        <div class="flex md:w-[382px]  w-[300px]" >
-                            <div class="flex px-4 py-6  md:mx-6 md:p-16 gap-4">
+                    <div className="block max-w-sm rounded-lg bg-white  items-center shadow-lg dark:bg-neutral-700 border-dotted border-2 border-[#CEC7B9] ">
+                        <div className="flex md:w-[382px]  w-[300px]" >
+                            <div className="flex px-4 py-6  md:mx-6 md:p-16 gap-4">
                                 <Image
                                     src='icons/locationIcon.svg'
                                     width={28}
@@ -69,7 +69,7 @@ const MyAddress = () => {
                                 />
 
 
-                                <h5 class="mb-6  text-[20px] text-[#6A5B40] leading-[28px] font-normal font-serif">
+                                <h5 className="mb-6  text-[20px] text-[#6A5B40] leading-[28px] font-normal font-serif">
                                     Add new address
                                 </h5>
 
@@ -80,23 +80,23 @@ const MyAddress = () => {
                     </div>
 
                     <div
-                        class="block max-w-sm rounded-lg bg-white  shadow-lg  border-[1px] border-[#9D8E73] ">
-                        <div class=" md:w-[382px] w-[300px] border-[0.5px] border-[#CECECE] pb-2" >
+                        className="block max-w-sm rounded-lg bg-white  shadow-lg  border-[1px] border-[#9D8E73] ">
+                        <div className=" md:w-[382px] w-[300px] border-[0.5px] border-[#CECECE] pb-2" >
 
                             <div className="flex  justify-between md:p-4 p-2">
-                                <div class="flex items-center">
-                                    <input id="default-radio-1" type="radio" value="" name="default-radio" class="invisible md:visible w-4 h-4 text-blue-600 bg-gray-100" />
-                                    <label class="-ml-2 md:ml-2 text-[16px] leading-[20px] md:font-bold font-normal ">John Hamilton</label>
+                                <div className="flex items-center">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio" className="invisible md:visible w-4 h-4 text-blue-600 bg-gray-100" />
+                                    <label className="-ml-2 md:ml-2 text-[16px] leading-[20px] md:font-bold font-normal ">John Hamilton</label>
                                 </div>
 
                                 <div>
-                                    <button class="bg-[#E6E3DC] md:-ml-10 text-[#6A5B40] text-[12px] leading-[17px]  font-serif font-bold py- px-2 rounded-full">
+                                    <button className="bg-[#E6E3DC] md:-ml-10 text-[#6A5B40] text-[12px] leading-[17px]  font-serif font-bold py- px-2 rounded-full">
                                         Home
                                     </button>
                                 </div>
 
                                 <div>
-                                    <button class="bg-[#857250] t py-1 px-4 rounded-full">
+                                    <button className="bg-[#857250] t py-1 px-4 rounded-full">
                                         <p className="text-[11px]  text-[#FFFFFF] font-bold">  Set Default</p>
                                     </button>
                                 </div>
@@ -121,23 +121,23 @@ const MyAddress = () => {
 
                 <div className="py-4">
                 <div
-                        class="block md:w-[382px] w-[300px] rounded-lg bg-white  shadow-lg  border-[1px] border-[#9D8E73] ">
-                        <div class="  border-b-[0.5px] border-[#CECECE] pb-2" >
+                        className="block md:w-[382px] w-[300px] rounded-lg bg-white  shadow-lg  border-[1px] border-[#9D8E73] ">
+                        <div className="  border-b-[0.5px] border-[#CECECE] pb-2" >
 
                             <div className="flex  justify-between md:p-4 p-2">
-                                <div class="flex items-center">
-                                    <input id="default-radio-1" type="radio" value="" name="default-radio" class="invisible md:visible w-4 h-4 text-blue-600 bg-gray-100" />
-                                    <label class="-ml-2 md:ml-2 text-[16px] leading-[20px] md:font-bold font-normal ">John Hamilton</label>
+                                <div className="flex items-center">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio" className="invisible md:visible w-4 h-4 text-blue-600 bg-gray-100" />
+                                    <label className="-ml-2 md:ml-2 text-[16px] leading-[20px] md:font-bold font-normal ">John Hamilton</label>
                                 </div>
 
                                 <div>
-                                    <button class="bg-[#E6E3DC] md:-ml-10 text-[#6A5B40] text-[12px] leading-[17px]  font-serif font-bold py- px-2 rounded-full">
+                                    <button className="bg-[#E6E3DC] md:-ml-10 text-[#6A5B40] text-[12px] leading-[17px]  font-serif font-bold py- px-2 rounded-full">
                                         Home
                                     </button>
                                 </div>
 
                                 <div>
-                                    <button class="bg-[#857250] t py-1 px-4 rounded-full">
+                                    <button className="bg-[#857250] t py-1 px-4 rounded-full">
                                         <p className="text-[11px]  text-[#FFFFFF] font-bold">  Set Default</p>
                                     </button>
                                 </div>

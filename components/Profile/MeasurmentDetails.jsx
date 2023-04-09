@@ -121,7 +121,6 @@ const MeasurmentDetails = () => {
                                     <div className="flex flex-wrap justify-betwee pt-6 md:w-[569px] bg-red-3 w-[257px] md:gap-12">
                                         <div className="flex  w-[257px] justify-between pb-4 ">
                                             <p className="text-[#494848] text-[17px] leading-[18px] font-medium font-sans mt-[4px] ">1. Length</p>
-                                            {/* <p className="text-[#000000] text-[14px] leading-[16px] font-normal font-sans  border-[1px] pt-[6px] border-[#857250]  w-[74px] h-[30px] text-center">40</p> */}
                                             <input type="text" className="text-[#000000] text-[14px] leading-[16px] font-normal font-sans  border-[1px]  border-[#857250]  w-[74px] h-[30px] text-center" placeholder="40" />
 
                                         </div>
@@ -147,7 +146,6 @@ const MeasurmentDetails = () => {
                                     <div className="flex flex-wrap justify-betwee pt-2 md:w-[569px] bg-red-3 w-[257px] md:gap-12">
                                         <div className="flex  w-[257px] justify-between pb-4 ">
                                             <p className="text-[#494848] text-[17px] leading-[18px] font-medium font-sans mt-[4px] ">5. Chest</p>
-                                            {/* <p className="text-[#000000] text-[14px] leading-[16px] font-normal font-sans  border-[1px] pt-[6px] border-[#857250]  w-[74px] h-[30px] text-center">40</p> */}
                                             <input type="text" className="text-[#000000] text-[14px] leading-[16px] font-normal font-sans  border-[1px]  border-[#857250]  w-[74px] h-[30px] text-center" placeholder="18" />
 
                                         </div>
@@ -160,7 +158,6 @@ const MeasurmentDetails = () => {
                                     <div className="flex flex-wrap justify-betwee pt-2 md:w-[569px] bg-red-3 w-[257px] md:gap-12">
                                         <div className="flex  w-[257px] justify-between pb-4 ">
                                             <p className="text-[#494848] text-[17px] leading-[18px] font-medium font-sans mt-[4px] ">7. Arm</p>
-                                            {/* <p className="text-[#000000] text-[14px] leading-[16px] font-normal font-sans  border-[1px] pt-[6px] border-[#857250]  w-[74px] h-[30px] text-center">40</p> */}
                                             <input type="text" className="text-[#000000] text-[14px] leading-[16px] font-normal font-sans  border-[1px]  border-[#857250]  w-[74px] h-[30px] text-center" placeholder="12" />
 
                                         </div>

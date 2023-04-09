@@ -21,8 +21,7 @@
 }
 
 .background {
-    /* padding-left: 240px; */
-    /* display: flex; */
+  
     background-image: url(../public/images/blazer.jpg);
     /* background-image: linear-gradient(to bottom right, black, black); */
     width: 200px;

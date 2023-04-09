@@ -67,7 +67,6 @@ const Otp = () => {
                     <div  >
                       <Link href="/home">
                         <button className="w-full  md:w-[343px] mx-auto flex justify-center bg-[#6D5C41]  text-[#FFFFFF] text-[16px] leading-[20px] font-bold font-sans py-2 px-4 rounded-full"
-                        // type='submit' onClick={() => validation() ? router.push('/home')}
                         >
                           Verify
                         </button>
@@ -89,8 +88,6 @@ const Otp = () => {
           </div>
         </div>
       </div>
-
-
     </>
   )
 }
